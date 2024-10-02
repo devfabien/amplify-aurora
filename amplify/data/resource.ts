@@ -4,7 +4,13 @@ import { schema as generatedSqlSchema } from "./schema.sql";
 
 // Add a global authorization rule
 const sqlSchema = generatedSqlSchema
-  .authorization((allow) => allow.guest())
+  .authorization((allow) => [allow.guest(), allow.publicApiKey()])
+  .setAuthorization((models) => [
+    models.customers.authorization((allow) => [
+      allow.guest(),
+      allow.publicApiKey(),
+    ]),
+  ])
   .renameModels(() => [["customers", "Customer"]]);
 
 /*== STEP 1 ===============================================================
