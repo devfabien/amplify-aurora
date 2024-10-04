@@ -6,13 +6,13 @@ import { secret } from "@aws-amplify/backend";
 
 export const schema = configure({
     database: {
-        identifier: "IDl2GxuxOgYzAO0Sd4T0Q9Q",
+        identifier: "IDN2qTtQ5ew0zZqUdrMnLA",
         engine: "postgresql",
         connectionUri: secret("SQL_CONNECTION_STRING"),
         vpcConfig: {
             vpcId: "vpc-00691791ffaa68863",
             securityGroupIds: [
-                "sg-0dda8c63626325380"
+                "sg-0429277f6ed33ecb5"
             ],
             subnetAvailabilityZones: [
                 {
