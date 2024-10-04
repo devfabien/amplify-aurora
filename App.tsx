@@ -25,8 +25,9 @@ export default function App() {
   const [todoArray, setTodoArray] = useState<any>();
 
   async function fetchTodos() {
-    const result = await client.models.Customer.list();
-    setTodoArray(result);
+    const result = await client.models.customers.list();
+    console.log("result", result);
+    setTodoArray(result.data);
   }
 
   useEffect(() => {
@@ -36,17 +37,18 @@ export default function App() {
   const addTodo = async () => {
     try {
       if (todo.trim().length > 0) {
-        let num = 1;
-        await client.models.Customer.create({
-          email: todo,
-          id: num,
+        let num = await client.models.customers.list();
+        const creaedData = await client.models.customers.create({
+          email: `${todo.split(" ").join(".")}@gmail.com`,
+          id: num.data.length++,
           name: todo,
-          phone: "9975674567",
+          phone: "1234567890",
         });
+        console.log("created data==>", creaedData);
 
-        const updatedResult = await client.models.Customer.list();
+        const updatedResult = await client.models.customers.list();
         console.log("updated==>", updatedResult);
-        setTodoArray(updatedResult);
+        setTodoArray(updatedResult.data);
         Alert.alert("Todo added");
         setTodo("");
       }
