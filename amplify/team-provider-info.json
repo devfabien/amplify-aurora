@@ -1,15 +1,15 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyaurora-dev-498bd-authRole",
-      "UnauthRoleArn": "arn:aws:iam::590184131451:role/amplify-amplifyaurora-dev-498bd-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::590184131451:role/amplify-amplifyaurora-dev-498bd-authRole",
+      "AuthRoleName": "amplify-amplifyaurora-dev-f3cfc-authRole",
+      "UnauthRoleArn": "arn:aws:iam::590184131451:role/amplify-amplifyaurora-dev-f3cfc-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::590184131451:role/amplify-amplifyaurora-dev-f3cfc-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-amplifyaurora-dev-498bd-deployment",
-      "UnauthRoleName": "amplify-amplifyaurora-dev-498bd-unauthRole",
-      "StackName": "amplify-amplifyaurora-dev-498bd",
-      "StackId": "arn:aws:cloudformation:us-east-1:590184131451:stack/amplify-amplifyaurora-dev-498bd/2e4b9960-7f12-11ef-a32d-0ee49161a803",
-      "AmplifyAppId": "d5wg5hl7ckgpt"
+      "DeploymentBucketName": "amplify-amplifyaurora-dev-f3cfc-deployment",
+      "UnauthRoleName": "amplify-amplifyaurora-dev-f3cfc-unauthRole",
+      "StackName": "amplify-amplifyaurora-dev-f3cfc",
+      "StackId": "arn:aws:cloudformation:us-east-1:590184131451:stack/amplify-amplifyaurora-dev-f3cfc/16b27bb0-8238-11ef-98d4-0afff3a029dd",
+      "AmplifyAppId": "d947429ss034r"
     }
   }
 }
