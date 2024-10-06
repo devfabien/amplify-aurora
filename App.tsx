@@ -50,7 +50,7 @@ export default function App() {
         setTodo("");
       }
     } catch (err) {
-      console.log(err);
+      console.log("error in adding ==> ", err);
     }
   };
 
