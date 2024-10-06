@@ -26,7 +26,6 @@ export default function App() {
 
   async function fetchTodos() {
     const result = await client.models.customers.list();
-    console.log("result", result);
     setTodoArray(result.data);
   }
 
@@ -44,10 +43,8 @@ export default function App() {
           name: todo,
           phone: "1234567890",
         });
-        console.log("created data==>", creaedData);
 
         const updatedResult = await client.models.customers.list();
-        console.log("updated==>", updatedResult);
         setTodoArray(updatedResult.data);
         Alert.alert("Todo added");
         setTodo("");
